@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maths Partner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/55fc175430.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  
+  <nav id="navbar">
+    <div id="logo">
+      <img src="logo.webp">
+      <div id="header" style="color: white;">Maths Partner</div>
+    </div>
+    <ul>
+      <li class="nav-link"><a href="#two" target="_self">Search</a></li>
+      <li class="nav-link"><a href="history.html" target="_blank">History</a></li>
+      <li class="nav-link"><a href="review.html" target="_blank">Reviews</a></li>
+      <li class="nav-link"><a href="signupForm.html" target="_blank">Sign up</a></li>
+    </ul>
+  </nav>
+
+  <h1>Maths Partner</h1>
+  <div class="container" id="stretch">
+    <div class="heading">
+      <h2>Math Partner</h2>
+      <button id="savedSol"><a href="history.html" target="_blank">Saved Solution</a> </button>
+
+    </div>
+
+    <form id="mathForm">
+      <div id="one">
+        <label for="expressionInput">Problem</label>
+        <br>
+        <input type="text" id="expressionInput" placeholder="Enter a math expression">
+        <br>
+      </div>
+      <div id="two" class="wrapper">
+        <label for="select-category">Select Category</label>
+        <div class="select-btn">
+          <span id="selectOper">Select Operation</span>
+          <i class="fa-solid fa-chevron-up fa-rotate-180"></i>
+        </div>
+        <div class="content">
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass" id="search"></i>
+            <input type="text" placeholder="Search" id="operationInput">
+          </div>
+          <ul class="options">
+          
+          </ul>
+          
+        </div>
+      </div>
+
+      <button type="submit" style="width: 100px; 
+      height: 35px; margin-top: 35px; 
+      border: 2px solid black; background: black; 
+      color: white; padding: 6px 6px; border-radius: 7px;
+      font-size: 17px; font-family:'Baloo Bhai', cursive;">
+      Submit</button>
+    </form>
+
+    <div id="solutionContainer"></div>
+  
+    
+    <!-- <div id="savedSolutions"></div> -->
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
