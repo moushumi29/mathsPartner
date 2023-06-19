@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Baloo Bhai', cursive;
+    /* background-color: black; */
+    background-image:url(background-math.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 10px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#navbar ul li a {
+    font-size: 1.3rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#logo img {
+    height: 59px;
+    margin: 3px 6px;
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+ h1{
+  font-size: 50px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+ } 
+ #logo{
+  width: 100px;
+  height: 100px;
+ }
+.container{
+  /* display: flex; */
+  /* display: grid;
+  justify-content: center; */
+  margin: auto;
+  width: 50rem;
+  height: 40rem;
+  border: 2px solid black;
+  /* background-color: transparent; */
+  background-color: rgb(248, 244, 186);
+}
+.container-stretch{
+  height: 40rem;
+}
+.heading{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+#savedSol{
+  padding: 0.5rem;
+  margin: 12px;
+  border-radius: 30px;
+  width: 12rem;
+  /* height: 2.5rem; */
+  font-size: 20px;
+  background-color: black;
+  font-family: inherit;
+}
+#savedSol a{
+  text-decoration: none;
+  color: white;
+  
+}
+#mathForm{
+  text-align: center;
+  display: flex;
+  margin: 40px;
+}
+#expressionInput{
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 7px;
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+  width: 240px;
+}
+#expressionInput::placeholder{
+  color: black;
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 20px;
+  text-align: center;
+}
+/* #select-category{
+  padding: 10px 35px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+form i{
+  margin: 40px 20px;
+  font-size: 30px;
+} */
+
+
+
+/* Search Bar */
+::selection{
+  color: #fff;
+  background: #4285f4;
+}
+.wrapper{
+  width: 270px;
+ margin: 10px auto 0;
+ /* padding: 2px; */
+}
+.select-btn, li{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.select-btn{
+  height: 40px;
+  padding: 0 20px;
+  font-size: 22px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  border-radius: 7px;
+  background: #fff;
+}
+.select-btn i{
+  font-size: 25px;
+  transition: transform 0.3s linear;
+} 
+.wrapper.active .select-btn i{
+  transform: rotate(-180deg);
+}
+.content{
+  display: none;
+  background: #fff;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 7px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.wrapper.active .content{
+  display: block;
+}
+.content .search{
+  position: relative;
+}
+.search i{
+  /* top: 50%; */
+  right: 15px;
+  line-height: 45px;
+  color: #999;
+  font-size: 20px;
+  position: absolute;
+  pointer-events: none;
+  /* transform: translateY(-10%); */
+}
+.search input{
+  height: 45px;
+  width: 100%;
+  font-size: 17px;
+  outline: none;
+  border: 1px solid #b3b3b3;
+  border-radius: 5px;
+  padding: 0 2px 0 2px;
+}
+.search input:focus{
+  padding-left: 5px;
+  border: 2px solid #4285f4;
+}
+.search input::placeholder{
+  color: #bfbfbf;
+}
+.content .options{
+  margin-top: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+  padding-right: 7px ;
+}
+.options::-webkit-scrollbar{
+  width: 7px;
+}
+.options::-webkit-scrollbar-track{
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+.options::-webkit-scrollbar-thumb{
+  background:#ccc;
+  border-radius: 25px;
+}
+.options::-webkit-scrollbar-thumb:hover{
+  background: #b3b3b3;
+}
+.options li{
+  height: 50px;
+  padding: 0 13px;
+  font-size: 17px;
+  /* border-radius: 5px; */
+  /* left: 2px; */
+}
+.options li:hover, li.selected{
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+#solutionContainer{
+  margin: 60px;
+  font-size: 22px;
+}
