@@ -10,25 +10,28 @@
 </head>
 
 <body>
-  
+
   <nav id="navbar">
     <div id="logo">
       <img src="logo.webp">
       <div id="header" style="color: white;">Maths Partner</div>
     </div>
-    <ul>
+    <ul class="navbar-menu">
       <li class="nav-link"><a href="#two" target="_self">Search</a></li>
-      <li class="nav-link"><a href="history.html" target="_blank">History</a></li>
-      <li class="nav-link"><a href="review.html" target="_blank">Reviews</a></li>
+      <li class="nav-link"><a href="#historySolutions" target="_self">History</a></li>
+      <li class="nav-link"><a href="#operationList" target="_self">Operations</a></li>
       <li class="nav-link"><a href="signupForm.html" target="_blank">Sign up</a></li>
     </ul>
+    <label id="icon">
+      <i class="fa-solid fa-bars"></i>
+    </label>
   </nav>
 
   <h1>Maths Partner</h1>
   <div class="container" id="stretch">
     <div class="heading">
       <h2>Math Partner</h2>
-      <button id="savedSol"><a href="history.html" target="_blank">Saved Solution</a> </button>
+      <button id="savedSol"><a href="#historySolutions" target="_self">Saved Solution</a> </button>
 
     </div>
 
@@ -51,9 +54,9 @@
             <input type="text" placeholder="Search" id="operationInput">
           </div>
           <ul class="options">
-          
+
           </ul>
-          
+
         </div>
       </div>
 
@@ -62,14 +65,40 @@
       border: 2px solid black; background: black; 
       color: white; padding: 6px 6px; border-radius: 7px;
       font-size: 17px; font-family:'Baloo Bhai', cursive;">
-      Submit</button>
+        Submit</button>
     </form>
-
     <div id="solutionContainer"></div>
-  
-    
-    <!-- <div id="savedSolutions"></div> -->
   </div>
+
+  <section id="operationList">
+    <h2>Operations</h2>
+    <div class="typesOfOPeration">
+      <div>Simplify</div>
+      <div>Factor</div>
+      <div>Derive</div>
+      <div>Integrate</div>
+      <div>Find 0's</div>
+      <div>Find Tangent</div>
+      <div>Area Under Curve</div>
+      <div>Cosine</div>
+      <div>Sine</div>
+      <div>Tangent</div>
+      <div>Inverse Cosine</div>
+      <div>Inverse Sine</div>
+      <div>Inverse Tangent</div>
+      <div>Absolute Value</div>
+      <div>Logarithm</div>
+  </section>
+
+
+  <div id="historySolutions" style="color: white;">
+    <h2>Saved Solutions</h2>
+    <ul id="savedList"></ul>
+  </div>
+
+
+  <footer>@CopyRight Violation</footer>
+
 
 
   <script src="script.js"></script>
